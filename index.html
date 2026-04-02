@@ -1,153 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Udit Gupta</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-<body class="w3-light-grey">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udit Gupta — Principal Software Engineer</title>
+    <meta name="description" content="Portfolio of Udit Gupta — Principal Software Engineer specializing in cloud security, distributed systems, and ML platforms.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Interactive particle canvas -->
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-    <!-- The Grid -->
-    <div class="w3-row-padding">
-
-        <!-- Left Column -->
-        <div class="w3-third">
-
-            <div class="w3-white w3-text-grey w3-card-4">
-                <div class="w3-display-container w3-padding-5">
-                    <div class="w3-container w3-center" style="padding-top: 2em;">
-                        <img src="photo.jpg" style="width:70%; border-radius: 50%; border-width: 200px; border-color: black;" alt="Avatar">
-                    </div>
-                </div>
-
-                <div class="w3-container">
-                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineer</p>
-                    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Seattle, United States</p>
-                    <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>udit.gupta002@gmail.com</p>
-                    <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1631-977-0681</p>
-                    <hr>
-
-                    <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-                    <p>Problem Solving</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-                    </div>
-                    <p>Application Development</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-                            <div class="w3-center w3-text-white">80%</div>
-                        </div>
-                    </div>
-                    <p>Cloud Technologies</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-                    </div>
-                    <p>Data Science and Machine Learning</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-                    </div>
-                    <p>DevOps</p>
-                    <div class="w3-light-grey w3-round-xlarge w3-small">
-                        <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:30%">30%</div>
-                    </div>
-                    <br>
-
-                    <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Technologies</b></p>
-                    <p>Java</p>
-                    <div class="w3-light-grey w3-round-xlarge">
-                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-                    </div>
-                    <p>Python</p>
-                    <div class="w3-light-grey w3-round-xlarge">
-                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
-                    </div>
-                    <p>Others</p>
-                    <div class="w3-light-grey w3-round-xlarge">
-                        <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-                    </div>
-                    <br>
-                </div>
-            </div><br>
-
-            <!-- End Left Column -->
-        </div>
-
-        <!-- Right Column -->
-        <div class="w3-twothird">
-            <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <h1 class="w3-text-grey">Udit Gupta</h1>
-                <p>A software Engineer who is passionate about all things tech.</p>
-            </div>
-            <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Software Engineer Intern - IPVideoCorporation.com</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2020 - December 2020</h6>
-                    <p>SDE</p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Software Engineer Intern - Amazon.com</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2020 - August 2020</h6>
-                    <p>SDE</p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Software Engineer - Walmart Labs - SamsClub.com</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-                    <p>SDE</p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Software Engineer - Hewlett Packard - Quality and Customer Experience</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-                    <p>SDE</p><br>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Software Engineer - Infosys - Apple.com</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-                    <p>SDE</p><br>
-                </div>
-            </div>
-
-            <div class="w3-container w3-card w3-white">
-                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>State University of New York - Stony Brook</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - 2020</h6>
-                    <p>Masters Degree</p>
-                    <hr>
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Dehradun Institute of Technology</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2016</h6>
-                    <p>Bachelors Degree</p>
-                    <hr>
-                </div>
-            </div>
-
-            <!-- End Right Column -->
-        </div>
-        <!-- End Grid -->
+    <!-- Ambient gradient orbs (below hero) -->
+    <div class="bg-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
     </div>
 
-    <!-- End Page Container -->
-</div>
+    <!-- Mouse-following glow -->
+    <div class="hero-mouse-glow" id="mouseGlow" aria-hidden="true"></div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-    <p>Find me on social media.</p>
-    <a href="http://linkedin.com/in/uditgupta002" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href="http://facebook.com/uditgupta95" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="http://instagram.com/udt_gpta" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="http://twitter.com/udgupta95" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-</footer>
+    <!-- Film grain overlay -->
+    <div class="film-grain" aria-hidden="true"></div>
 
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">UG<span class="accent">.</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content" id="heroContent">
+            <p class="hero-greeting hero-anim">Hello, I'm</p>
+            <h1 class="hero-name hero-anim">
+                <span class="hero-name-line">Udit</span>
+                <span class="hero-name-line">Gupta<span class="hero-name-dot">.</span></span>
+            </h1>
+            <div class="hero-title-wrapper hero-anim">
+                <span class="hero-title-static">I build </span>
+                <span class="hero-title-typed" id="typedText"></span>
+                <span class="typed-cursor">|</span>
+            </div>
+            <p class="hero-summary hero-anim">
+                Principal Software Engineer with 9+ years of expertise in cloud security,
+                distributed systems, and machine learning platforms.
+            </p>
+            <div class="hero-cta hero-anim">
+                <a href="#contact" class="btn btn-primary"><span>Get in Touch</span></a>
+                <a href="#experience" class="btn btn-outline"><span>View My Work</span></a>
+            </div>
+            <div class="hero-socials hero-anim">
+                <a href="https://linkedin.com/in/uditgupta002" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/uditgupta002" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:udit.gupta002@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About <span class="accent">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="image-frame">
+                        <img src="photo.jpg" alt="Udit Gupta" loading="lazy">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <p class="about-description">
+                        I'm a Principal Software Engineer at <strong>Palo Alto Networks</strong>, where I architect
+                        scalable microservices and AI-driven security systems. My career spans leading tech companies
+                        including <strong>Meta</strong>, <strong>Amazon</strong>, <strong>Hewlett-Packard</strong>,
+                        and <strong>Apple</strong> (via Infosys).
+                    </p>
+                    <p class="about-description">
+                        I specialize in designing high-throughput data pipelines, cloud-native security platforms,
+                        and ML infrastructure. From building RAG-powered co-pilot systems at Meta to architecting
+                        distributed ad-tech at Amazon, I thrive on solving complex engineering challenges at scale.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="9">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Companies</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="800">0</span><span class="stat-suffix">K+</span>
+                            <span class="stat-label">Advertisers Impacted</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal">Work <span class="accent">Experience</span></h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Principal Software Engineer</h3>
+                                <span class="company">Palo Alto Networks</span>
+                            </div>
+                            <span class="timeline-date">Jul 2023 — Present</span>
+                        </div>
+                        <span class="timeline-location"><i class="fa-solid fa-location-dot"></i> Santa Clara, CA</span>
+                        <ul class="timeline-details">
+                            <li>Designed and launched a global configuration management solution for Enterprise DLP product, enabling seamless sandbox testing and promotion — <em>Patent Pending</em></li>
+                            <li>Engineered scalable third-party APIs for an enterprise DLP engine, improving policy automation efficiency and facilitating programmatic security orchestration</li>
+                            <li>Led the architecture of a next-gen User and Entity Behavior Analytics (UEBA) platform from ground up for large-scale, ML-driven threat detection</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Spring Framework</span><span>GCP</span><span>Java</span><span>Python</span><span>PostgreSQL</span><span>Kafka</span><span>Microservices</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Software Engineer — ML Infrastructure</h3>
+                                <span class="company">Meta</span>
+                            </div>
+                            <span class="timeline-date">Jun 2022 — Jul 2023</span>
+                        </div>
+                        <span class="timeline-location"><i class="fa-solid fa-location-dot"></i> Seattle, WA</span>
+                        <ul class="timeline-details">
+                            <li>Designed and deployed a Retrieval-Augmented Generation (RAG) co-pilot pipeline, automating customer query resolution by indexing extensive internal knowledge bases</li>
+                            <li>Developed mission-critical features for a product sandbox tailored for Tier-1 enterprise customers, enhancing pre-deployment validation and security testing</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>AWS</span><span>Node.js</span><span>Python</span><span>MongoDB</span><span>Microservices</span><span>Graph DBs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Software Development Engineer</h3>
+                                <span class="company">Amazon</span>
+                            </div>
+                            <span class="timeline-date">Feb 2021 — Jun 2022</span>
+                        </div>
+                        <span class="timeline-location"><i class="fa-solid fa-location-dot"></i> Seattle, WA</span>
+                        <ul class="timeline-details">
+                            <li>Architected distributed backend services on AWS to provide contextually rich product recommendations for high-traffic Amazon PPC campaigns</li>
+                            <li>Developed automated Spark and EMR workflows to generate optimized campaign budget recommendations for 800,000+ global advertisers</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>AWS CDK</span><span>Lambda</span><span>DynamoDB</span><span>EMR</span><span>Java</span><span>Spark</span><span>Airflow</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Software Engineer Intern</h3>
+                                <span class="company">Amazon</span>
+                            </div>
+                            <span class="timeline-date">Jun 2020 — Aug 2020</span>
+                        </div>
+                        <span class="timeline-location"><i class="fa-solid fa-location-dot"></i> Seattle, WA</span>
+                        <ul class="timeline-details">
+                            <li>Designed a Spark-based serverless architecture for processing massive advertisement datasets, resulting in a 49% reduction in operational costs</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Spark</span><span>AWS</span><span>Serverless</span><span>S3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Software Engineer</h3>
+                                <span class="company">Hewlett-Packard</span>
+                            </div>
+                            <span class="timeline-date">Jan 2018 — May 2019</span>
+                        </div>
+                        <span class="timeline-location"><i class="fa-solid fa-location-dot"></i> Bengaluru, India</span>
+                        <ul class="timeline-details">
+                            <li>Developed deep-learning algorithms to extract business intelligence from customer verbatims and built automated pipelines for large-scale data ingestion and processing</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Deep Learning</span><span>NLP</span><span>Data Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Systems Engineer</h3>
+                                <span class="company">Infosys Ltd. (Contract — Apple)</span>
+                            </div>
+                            <span class="timeline-date">Jul 2016 — Dec 2017</span>
+                        </div>
+                        <span class="timeline-location"><i class="fa-solid fa-location-dot"></i> Bengaluru, India</span>
+                        <ul class="timeline-details">
+                            <li>Implemented backend microservices for Apple Online Store product replacement features in European markets and automated HAZMAT logistics workflows</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Microservices</span><span>Backend</span><span>Logistics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">Technical <span class="accent">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon"><i class="fa-solid fa-sitemap"></i></div>
+                    <h3>Architecture</h3>
+                    <div class="skill-tags">
+                        <span>Distributed Systems</span>
+                        <span>Microservices</span>
+                        <span>System Design</span>
+                        <span>Scalable Backend</span>
+                        <span>API Design</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon"><i class="fa-solid fa-cloud-bolt"></i></div>
+                    <h3>Cloud & Security</h3>
+                    <div class="skill-tags">
+                        <span>AWS</span>
+                        <span>GCP</span>
+                        <span>Cloud Security</span>
+                        <span>DLP</span>
+                        <span>UEBA</span>
+                        <span>IAM</span>
+                        <span>Kubernetes</span>
+                        <span>CDK</span>
+                        <span>Lambda</span>
+                        <span>EMR</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>Data & AI</h3>
+                    <div class="skill-tags">
+                        <span>Generative AI</span>
+                        <span>RAG</span>
+                        <span>Spark</span>
+                        <span>Kafka</span>
+                        <span>Airflow</span>
+                        <span>ML Infrastructure</span>
+                        <span>Big Data</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Languages & Tools</h3>
+                    <div class="skill-tags">
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>Node.js</span>
+                        <span>TypeScript</span>
+                        <span>Scala</span>
+                        <span>SQL</span>
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-alt" id="education">
+        <div class="container">
+            <h2 class="section-title reveal">Education</h2>
+            <div class="education-grid">
+                <div class="education-card reveal">
+                    <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>MS in Computer Science</h3>
+                    <span class="education-school">Stony Brook University</span>
+                    <span class="education-meta">GPA: 3.84 / 4.00</span>
+                </div>
+                <div class="education-card reveal">
+                    <div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>B.Tech in Computer Science</h3>
+                    <span class="education-school">DIT University</span>
+                    <span class="education-meta">Honors: 85.59%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get in <span class="accent">Touch</span></h2>
+            <p class="contact-subtitle reveal">
+                I'm always open to discussing new opportunities, interesting projects, or just connecting.
+            </p>
+            <div class="contact-grid reveal">
+                <a href="mailto:udit.gupta002@gmail.com" class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">udit.gupta002@gmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/uditgupta002" target="_blank" rel="noopener" class="contact-card">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">uditgupta002</span>
+                </a>
+                <div class="contact-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="contact-label">Location</span>
+                    <span class="contact-value">Santa Clara, CA</span>
+                </div>
+            </div>
+            <div class="contact-socials reveal">
+                <a href="https://linkedin.com/in/uditgupta002" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/uditgupta002" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <span class="footer-logo">UG<span class="accent">.</span></span>
+            <p>&copy; 2026 Udit Gupta. Built with passion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
